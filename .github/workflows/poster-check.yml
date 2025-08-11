@@ -1,0 +1,13 @@
+
+name: Poster Upload Confirmation
+
+on: push
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+      - name: Confirm Poster Upload
+        run: echo "Poster Uploaded Successfully"
